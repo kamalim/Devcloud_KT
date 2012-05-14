@@ -1,0 +1,6 @@
+echo "couchdb.pid"
+ps -p $(cat /var/run/couchdb/couchdb.pid) -o "pcpu,pmem,rss" 
+echo "solr.pid"
+ps -p $(cat /var/run/chef/solr.pid) -o "pcpu,pmem,rss" 
+echo "expander.pid"
+ps -p $(cat /var/run/chef/expander.pid) -o "pcpu,pmem,rss" 
